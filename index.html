@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Math Tutoring Meeting">
+    <title>Math Tutoring Meeting</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+        <h1>Math Tutoring Meeting</h1>
+        <nav>
+            <ul>
+                <li><a href="#info">Meeting Info</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#meeting">Meeting Minutes</a></li>
+                <li><a href="#other">Other</a></li>
+                <li><a href="#help">Need more help?</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="info">
+            <h2>Date</h2>
+            <p>April 16, 2024</p>
+        </section>
+        <hr>
+        <section id="agenda">
+            <h2>Agenda</h2>
+            <ol>
+                <li>Review Homework</li>
+                <li>Derivatives</li>
+                <li>Assign Homework</li>
+            </ol>
+        </section>
+        <section id="meeting">
+            <h2>Meeting Minutes</h2>
+            <h3>Derivatives</h3>
+            <p><b>Calculations of derivatives</b></p>
+            <p><span style="color:red">Purpose</span> of derivatives</p>
+            <h3>Integrals</h3>
+            <p>Calculations of integrals</p>
+            <p><strong><span style="color:green">Application</span> of integrals</strong></p>
+            <p>Read chapter 3 in <i>Calculus 3</i> textbook</p>
+            <p>Homework due:<br><em>Friday, 11:59pm</em></p>
+        </section>
+        <section id="other">
+            <h2>Other</h2>
+            <details>
+                <summary>Notes</summary>
+                <p>Try and make a fun derivative function</p>
+            </details>
+        </section>
+        <hr>
+        <footer>
+            <h2>Media</h2>
+            <img src="images/derivatives_ex.jpg" alt="Example of derivatives">
+            <audio controls>
+                <source src="images/meeting_audio.mp3" type="audio/mp3">
+                Browser not supported for audio.
+            </audio>
+            <video controls>
+                <source src="images/meeting_video.mp4" type="video/mp4">
+                Browser not supported for video.
+            </video>
+        </footer>
+        <section id="help">
+            <h2>More Help</h2>
+            <form action="submit_form,php" method="post">
+                <fieldset>
+                    <legend>Help Form</legend>
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="topic">Topics needed help on:</label>
+                        <input list="topics" id="topic" name="topic">
+                        <datalist id="topics">
+                            <option value="Derivatives"></option>
+                            <option value="Integrals"></option>
+                        </datalist>
+                    </div>
+                    <div>
+                        <label for="urgency">Urgency:</label>
+                        <select id="urgency" name="urgency">
+                            <option value="low">Low</option>
+                            <option value="medium">Medium</option>
+                            <option value="high">High</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="comments">Additional Comments:</label>
+                        <textarea id="comments" name="comments" rows="5" cols="50"></textarea>
+                    </div>
+                    <button type="submit">Submit Form</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+  </body>
+</html>
