@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* CSS styling for page */
+:root {
+    --primary-color: rgb(51, 153, 255);
+    --secondary-color: rgba(153, 230, 51, 1);
+    --font-color: #333;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--font-color, black);
+    background-color: hsl(50, 100%, 95%);
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border-bottom: 3px solid var(--secondary-color);
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+nav li {
+    display: inline-block;
+}
+h1, h2 {
+    text-align: center;
+    margin: 0;
+}
+section {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #bdc3c7;
+}
+.example {
+    margin-top: 3mm;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    padding: 10px 15px 10px 15px;
+    border-style: solid;
+    border-color: var(--secondary-color);
+    border-width: 2pt;
+    border-radius: 5px;
+}
+h1 {
+    color: rgba(41, 128, 185, 0.9);
+    text-decoration: underline;
+    text-align: left;
+}
+.hidden {
+    display: none;
+}
+.visible-inline {
+    display: inline;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    max-height: 100%;
+}
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+a:hover, a:active {
+    color: #d35400;
+}
+main {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    header, nav li {
+        text-align: center;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        background-color: #95a5a6;
+    }
+}
+
