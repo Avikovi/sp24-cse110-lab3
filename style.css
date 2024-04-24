@@ -32,6 +32,12 @@ h1, h2 {
     text-align: center;
     margin: 0;
 }
+* {
+    box-sizing: border-box; /* Apply box-sizing to all elements */
+}
+#info {
+    background-color: #f2f2f2;
+}
 section {
     margin: 20px auto;
     padding: 20px;
@@ -47,6 +53,27 @@ section {
     border-color: var(--secondary-color);
     border-width: 2pt;
     border-radius: 5px;
+}
+input[type="text"] {
+    border: 1px solid #ccc;
+}
+nav ul li a {
+    color: #2c3e50;
+}
+header > h1 {
+    font-size: 2em;
+}
+h1 ~ p {
+    color: #555;
+}
+h2 + p {
+    font-style: italic;
+}
+section.highlight {
+    background-color: #fff3cd;
+}
+p:has(span) {
+    font-weight: bold;
 }
 h1 {
     color: rgba(41, 128, 185, 0.9);
@@ -90,12 +117,13 @@ footer {
     gap: 10px;
 }
 @media (max-width: 768px) {
-    nav ul {
+    header nav ul {
         flex-direction: column;
     }
 
-    header, nav li {
+    header nav ul li {
         text-align: center;
+        margin-top: 5px;
     }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
